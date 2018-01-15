@@ -2,7 +2,7 @@ package MachineMathematics;
 
 import java.math.BigDecimal;
 
-public class app002 {
+public class App002 {
     public static void main(String[] args) {
         double pi = 3.141592653;
 

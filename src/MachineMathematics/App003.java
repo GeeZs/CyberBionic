@@ -1,6 +1,6 @@
 package MachineMathematics;
 
-public class app003 {
+public class App003 {
     public static void main(String[] args) {
         String a = "\nmy string1";
         String a1 = "\tmy string2";

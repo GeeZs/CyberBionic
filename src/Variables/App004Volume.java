@@ -1,6 +1,6 @@
 package Variables;
 
-public class app004Volume {
+public class App004Volume {
     public static void main(String[] args) {
         double pi = Math.PI;
         int r = 10, h = 5;

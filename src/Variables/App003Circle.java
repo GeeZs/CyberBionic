@@ -1,6 +1,6 @@
 package Variables;
 
-public class app003Circle {
+public class App003Circle {
     public static void main(String[] args) {
         double pi = Math.PI;
         int r = 10;

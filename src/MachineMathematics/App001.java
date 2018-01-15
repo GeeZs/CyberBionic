@@ -2,7 +2,7 @@ package MachineMathematics;
 
 import java.util.Random;
 
-public class app001 {
+public class App001 {
     public static void main(String[] args) {
         byte byteVar = Byte.MAX_VALUE;
         short shortVar = Short.MAX_VALUE;

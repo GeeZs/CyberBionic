@@ -7,6 +7,6 @@ public class app005Main {
         //int \u006fIdentifier;
         int $myVar;
         int myVariable;
-
+        int test;
     }
 }

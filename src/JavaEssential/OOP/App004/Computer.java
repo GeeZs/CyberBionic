@@ -7,7 +7,7 @@ public class Computer {
     public Computer() {
     }
 
-    public Computer(int price, int id) {
+    Computer(int price, int id) {
         this.price = price;
         this.id = id;
     }
@@ -35,9 +35,9 @@ public class Computer {
                 ", id=" + id +
                 '}';
     }
-    public void printComputers(Computer[] anArray){
-        for (int i = 0; i < anArray.length; i++) {
-            System.out.println(anArray[i].toString());
+    static void printComputers(Computer[] anArray){
+        for (Computer anAnArray : anArray) {
+            System.out.println(anAnArray.toString());
         }
     }
 }

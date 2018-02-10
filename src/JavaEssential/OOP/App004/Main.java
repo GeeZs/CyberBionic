@@ -8,7 +8,6 @@ public class Main {
         for (int i = 0; i < computers.length; i++) {
             computers[i] = new Computer(new Random().nextInt(10000), i+1);
         }
-        new Computer().printComputers(computers);
-
+        Computer.printComputers(computers);
     }
 }

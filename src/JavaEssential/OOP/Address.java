@@ -9,6 +9,7 @@ public class Address {
     private int house;
     private int apartment;
 
+
     public String getIndex() {
         return index;
     }

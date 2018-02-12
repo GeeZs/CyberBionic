@@ -15,22 +15,33 @@ public class Device {
     }
 
     @Override
-    public int hashCode() {
-        return super.hashCode();
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Device)) return false;
+
+        Device device = (Device) o;
+
+        if (Float.compare(device.getPrice(), getPrice()) != 0) return false;
+        if (getManufacturer() != null ? !getManufacturer().equals(device.getManufacturer()) : device.getManufacturer() != null)
+            return false;
+        return getSerialNumber() != null ? getSerialNumber().equals(device.getSerialNumber()) : device.getSerialNumber() == null;
     }
 
     @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
+    public int hashCode() {
+        int result = getManufacturer() != null ? getManufacturer().hashCode() : 0;
+        result = 31 * result + (getPrice() != +0.0f ? Float.floatToIntBits(getPrice()) : 0);
+        result = 31 * result + (getSerialNumber() != null ? getSerialNumber().hashCode() : 0);
+        return result;
     }
 
-    public Device(String manufacturer, float price, String serialNumber) {
+    Device(String manufacturer, float price, String serialNumber) {
         this.manufacturer = manufacturer;
         this.price = price;
         this.serialNumber = serialNumber;
     }
 
-    public String getManufacturer() {
+    String getManufacturer() {
         return manufacturer;
     }
 
@@ -38,7 +49,7 @@ public class Device {
         this.manufacturer = manufacturer;
     }
 
-    public float getPrice() {
+    float getPrice() {
         return price;
     }
 
@@ -46,7 +57,7 @@ public class Device {
         this.price = price;
     }
 
-    public String getSerialNumber() {
+    String getSerialNumber() {
         return serialNumber;
     }
 
